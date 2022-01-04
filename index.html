@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<script type="text/Javascript" src="script.js" > </script>
+<title>Cadastro de Tarefas</title>
+</head>
+
+<body> 
+    <nav class="cabecalho">
+        <h1> CADASTRO DE TAREFAS </h1>
+    </nav>
+
+    <fieldset>      
+            <div class="campo">
+              <label>Tarefa</label>       
+                <input id="rowInput" type="text" style="width: 20em" value="">
+                <button id="button" onclick={InsertRow()}>Enviar</button>   
+            </div>
+    </fieldset>
+                 
+    <div id=table>
+    <label>Lista de Tarefas</label>
+      <ul 
+        id="tableList">                  
+      </ul>          
+    </div>
+     
+    <script>
+        storageList();
+    </script>
+			
+</body>
+</html>
